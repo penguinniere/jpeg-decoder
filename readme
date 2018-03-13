@@ -1,0 +1,15 @@
+gcc version : 4.8.1
+environment : windwos
+
+--how to compile--
+	g++ ./decoder.cpp -fpermissive =o ./decoder
+	or
+	make
+
+--how to execution--
+	./decoder jpeg_file_path bmp_file_path [-y coef] [-cb coef] [-cr coef]
+	the jpeg_file_path and bmp_file_path must appear as 2en and 3rd 
+        parameter specificly.
+	When setting -y -cb -cr, the program will scale the coefficient when 
+        convert ycbcr into bgr format.
+	The coefficient is limit by -5.0~5.0. 
